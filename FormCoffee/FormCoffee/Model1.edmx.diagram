@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="91e04e8725fe44be9882949e31909acd" Name="Diagram1">
+        <EntityTypeShape EntityType="SHOPINGCARTModel1.C__MigrationHistory" Width="1.5" PointX="5.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SHOPINGCARTModel1.About" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SHOPINGCARTModel1.Action" Width="1.5" PointX="1.5" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SHOPINGCARTModel1.Banner" Width="1.5" PointX="7.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SHOPINGCARTModel1.Baogia" Width="1.5" PointX="7.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SHOPINGCARTModel1.Category" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SHOPINGCARTModel1.Contact" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SHOPINGCARTModel1.FeedBack" Width="1.5" PointX="9.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SHOPINGCARTModel1.Footer" Width="1.5" PointX="9.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SHOPINGCARTModel1.Menu" Width="1.5" PointX="9.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SHOPINGCARTModel1.News" Width="1.5" PointX="11.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SHOPINGCARTModel1.OrderDetail" Width="1.5" PointX="5.25" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SHOPINGCARTModel1.Order" Width="1.5" PointX="3" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SHOPINGCARTModel1.Product" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="SHOPINGCARTModel1.Projected" Width="1.5" PointX="11.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SHOPINGCARTModel1.RoleAction" Width="1.5" PointX="3.75" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="SHOPINGCARTModel1.Role" Width="1.5" PointX="1.5" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="SHOPINGCARTModel1.Slider" Width="1.5" PointX="5.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SHOPINGCARTModel1.User" Width="1.5" PointX="0.75" PointY="6.125" IsExpanded="true" />
+        <AssociationConnector Association="SHOPINGCARTModel1.FK_dbo_RoleActions_dbo_Actions_ActionId" ManuallyRouted="false" />
+        <AssociationConnector Association="SHOPINGCARTModel1.FK_dbo_Categories_dbo_Categories_ParentID" ManuallyRouted="false" />
+        <AssociationConnector Association="SHOPINGCARTModel1.FK_dbo_Products_dbo_Categories_Category_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="SHOPINGCARTModel1.FK_dbo_OrderDetails_dbo_Orders_Oder_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="SHOPINGCARTModel1.FK_dbo_OrderDetails_dbo_Products_Product_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="SHOPINGCARTModel1.FK_dbo_Orders_dbo_Users_User_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="SHOPINGCARTModel1.FK_dbo_RoleActions_dbo_Roles_RoleId" ManuallyRouted="false" />
+        <AssociationConnector Association="SHOPINGCARTModel1.FK_dbo_Users_dbo_Roles_RoleId" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

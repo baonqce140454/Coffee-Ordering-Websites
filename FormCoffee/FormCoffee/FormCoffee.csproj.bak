@@ -1,0 +1,480 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7C1BF11A-2340-4669-A870-3EA7897B119D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FormCoffee</RootNamespace>
+    <AssemblyName>FormCoffee</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="DevExpress.BonusSkins.v20.1" />
+    <Reference Include="DevExpress.Data.Desktop.v20.1" />
+    <Reference Include="DevExpress.Data.v20.1" />
+    <Reference Include="DevExpress.Printing.v20.1.Core" />
+    <Reference Include="DevExpress.Utils.v20.1" />
+    <Reference Include="DevExpress.XtraBars.v20.1" />
+    <Reference Include="DevExpress.Sparkline.v20.1.Core" />
+    <Reference Include="DevExpress.XtraEditors.v20.1" />
+    <Reference Include="DevExpress.XtraGrid.v20.1, Version=20.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v20.1, Version=20.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v20.1, Version=20.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <DependentUpon>Data.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Action.cs">
+      <DependentUpon>Data.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Banner.cs">
+      <DependentUpon>Data.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Baogia.cs">
+      <DependentUpon>Data.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Categories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Categories.Designer.cs">
+      <DependentUpon>Categories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category.cs">
+      <DependentUpon>Data.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CategoryDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.cs">
+      <DependentUpon>Data.tt</DependentUpon>
+    </Compile>
+    <Compile Include="C__MigrationHistory.cs">
+      <DependentUpon>Data.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Data.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Data.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Data.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Feadbacks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Feadbacks.Designer.cs">
+      <DependentUpon>Feadbacks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FeedBack.cs">
+      <DependentUpon>Data.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FeedbacksDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FeedbacksDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Footer.cs">
+      <DependentUpon>Data.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <DependentUpon>Data.tt</DependentUpon>
+    </Compile>
+    <Compile Include="model\ListOrderPro.cs" />
+    <Compile Include="News.cs">
+      <DependentUpon>Data.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Order.cs">
+      <DependentUpon>Data.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderDetail.cs">
+      <DependentUpon>Data.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderDetailsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrderDetailsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Orders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Orders.Designer.cs">
+      <DependentUpon>Orders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs">
+      <DependentUpon>Data.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Product.Designer.cs">
+      <DependentUpon>Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Projected.cs">
+      <DependentUpon>Data.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Role.cs">
+      <DependentUpon>Data.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RoleAction.cs">
+      <DependentUpon>Data.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SHOPINGCARTDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SHOPINGCARTDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SHOPINGCARTDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SHOPINGCARTDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Slider.cs">
+      <DependentUpon>Data.tt</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs">
+      <DependentUpon>Data.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users.Designer.cs">
+      <DependentUpon>Users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResetPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResetPass.Designer.cs">
+      <DependentUpon>ResetPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProduct.Designer.cs">
+      <DependentUpon>frmProduct.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Categories.resx">
+      <DependentUpon>Categories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Feadbacks.resx">
+      <DependentUpon>Feadbacks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Orders.resx">
+      <DependentUpon>Orders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product.resx">
+      <DependentUpon>Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Users.resx">
+      <DependentUpon>Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResetPass.resx">
+      <DependentUpon>ResetPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProduct.resx">
+      <DependentUpon>frmProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <EntityDeploy Include="Data.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Data.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="CategoryDataSet.xsc">
+      <DependentUpon>CategoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CategoryDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CategoryDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CategoryDataSet.xss">
+      <DependentUpon>CategoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Data.edmx.diagram">
+      <DependentUpon>Data.edmx</DependentUpon>
+    </None>
+    <None Include="FeedbacksDataSet.xsc">
+      <DependentUpon>FeedbacksDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FeedbacksDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FeedbacksDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FeedbacksDataSet.xss">
+      <DependentUpon>FeedbacksDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OrderDetailsDataSet.xsc">
+      <DependentUpon>OrderDetailsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OrderDetailsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OrderDetailsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OrderDetailsDataSet.xss">
+      <DependentUpon>OrderDetailsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="ProductDataSet.xsc">
+      <DependentUpon>ProductDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ProductDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProductDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProductDataSet.xss">
+      <DependentUpon>ProductDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SHOPINGCARTDataSet.xsc">
+      <DependentUpon>SHOPINGCARTDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SHOPINGCARTDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SHOPINGCARTDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SHOPINGCARTDataSet.xss">
+      <DependentUpon>SHOPINGCARTDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SHOPINGCARTDataSet1.xsc">
+      <DependentUpon>SHOPINGCARTDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SHOPINGCARTDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SHOPINGCARTDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SHOPINGCARTDataSet1.xss">
+      <DependentUpon>SHOPINGCARTDataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1.jpg" />
+    <Content Include="Data.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Data.Context.cs</LastGenOutput>
+      <DependentUpon>Data.edmx</DependentUpon>
+    </Content>
+    <Content Include="Data.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Data.edmx</DependentUpon>
+      <LastGenOutput>Data.cs</LastGenOutput>
+    </Content>
+    <Content Include="ShopingCart\Contents\Uploads\files\1-2.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\files\51FTrWBzKhL__SX466_.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\files\a879125034afcef197be.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\files\anhDo.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\files\Arabica-Coffee-630.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\files\Arabica.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\files\coffeeplant.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\files\download %281%29.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\files\download.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\files\ThayDa.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\images\14021319768806.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\images\19113646_467629376920929_1626238949557771487_n.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\images\22449653_525023821181484_6350527131235593039_n.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\images\22489756_525023861181480_1886408195975842069_n.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\images\22489942_525023797848153_2721993807659339067_n.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\images\22490112_525023874514812_3017485690454705144_n.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\images\24131731_543906292626570_664293306638892442_o.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\images\24273605_543906155959917_4979075804154077211_o.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\images\24294334_543906169293249_4998717758042131273_n.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\images\53014710_821527508197779_2080683278615969792_n.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\images\53150323_821527411531122_4287199190515187712_n.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\images\53330422_821527541531109_591994231673847808_n.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\images\53352546_821527701531093_6632601051843264512_o.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\images\53866432_821527468197783_5832925965788905472_n.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\images\65588896_898744430476086_5238642559495962624_o.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\images\65904124_898744397142756_4708903217352671232_n.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\images\69205069_940470512970144_4978454986892509184_o.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\images\69279113_940470369636825_5171445107500515328_o.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\images\69516074_940470426303486_8066912329599549440_o.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\images\69696069_940470442970151_4412011283734331392_o.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\images\69957352_940470499636812_7501946692191649792_n.png" />
+    <Content Include="ShopingCart\Contents\Uploads\images\73403881_1015081968842331_7892072487381368832_n.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\images\76710680_1015082475508947_7341414970879377408_o.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\images\76726040_1015082702175591_706078974056333312_n.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\images\76751645_1015081908842337_8943438803079528448_o.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\images\76948991_1015082105508984_779914521346048_o.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\images\76960340_1015081998842328_3745895666107285504_o.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\images\77098442_1015082748842253_4026227172199890944_n.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\images\77263681_1015082522175609_3717627823452585984_o.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\images\77331948_1015081932175668_7646580415964119040_n.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\images\78036965_1015082652175596_654435780483088384_n.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\images\78113640_1015082422175619_7420507253196718080_n.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\images\78163756_1015082305508964_8716809218708996096_o.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\images\78294389_1015082622175599_2808944934122422272_n.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\images\78298143_1015082562175605_5808386429625040896_n.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\images\78383014_1015082045508990_5004215058272616448_o.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\images\78406954_1015082245508970_3168512745670705152_o.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\images\78417455_1015082075508987_7673355366641434624_o.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\images\78551934_1015082368842291_3034292638258823168_o.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\images\78683732_1015082205508974_4695098427959148544_o.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\images\78986287_1015082158842312_6602890576918478848_o.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\images\gh018.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Files\1-2.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Files\51FTrWBzKhL__SX466_.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Files\a879125034afcef197be.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Files\anhDo.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Files\Arabica-Coffee-630.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Files\Arabica.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Files\coffeeplant.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Files\download %281%29.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Files\download.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Files\ThayDa.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Images\14021319768806.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Images\19113646_467629376920929_1626238949557771487_n.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Images\22449653_525023821181484_6350527131235593039_n.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Images\22489756_525023861181480_1886408195975842069_n.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Images\22489942_525023797848153_2721993807659339067_n.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Images\22490112_525023874514812_3017485690454705144_n.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Images\24131731_543906292626570_664293306638892442_o.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Images\24273605_543906155959917_4979075804154077211_o.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Images\24294334_543906169293249_4998717758042131273_n.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Images\53014710_821527508197779_2080683278615969792_n.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Images\53150323_821527411531122_4287199190515187712_n.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Images\53330422_821527541531109_591994231673847808_n.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Images\53352546_821527701531093_6632601051843264512_o.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Images\53866432_821527468197783_5832925965788905472_n.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Images\65588896_898744430476086_5238642559495962624_o.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Images\65904124_898744397142756_4708903217352671232_n.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Images\69205069_940470512970144_4978454986892509184_o.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Images\69279113_940470369636825_5171445107500515328_o.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Images\69516074_940470426303486_8066912329599549440_o.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Images\69696069_940470442970151_4412011283734331392_o.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Images\69957352_940470499636812_7501946692191649792_n.png" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Images\73403881_1015081968842331_7892072487381368832_n.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Images\76710680_1015082475508947_7341414970879377408_o.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Images\76726040_1015082702175591_706078974056333312_n.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Images\76751645_1015081908842337_8943438803079528448_o.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Images\76948991_1015082105508984_779914521346048_o.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Images\76960340_1015081998842328_3745895666107285504_o.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Images\77098442_1015082748842253_4026227172199890944_n.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Images\77263681_1015082522175609_3717627823452585984_o.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Images\77331948_1015081932175668_7646580415964119040_n.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Images\78036965_1015082652175596_654435780483088384_n.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Images\78113640_1015082422175619_7420507253196718080_n.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Images\78163756_1015082305508964_8716809218708996096_o.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Images\78294389_1015082622175599_2808944934122422272_n.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Images\78298143_1015082562175605_5808386429625040896_n.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Images\78383014_1015082045508990_5004215058272616448_o.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Images\78406954_1015082245508970_3168512745670705152_o.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Images\78417455_1015082075508987_7673355366641434624_o.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Images\78551934_1015082368842291_3034292638258823168_o.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Images\78683732_1015082205508974_4695098427959148544_o.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Images\78986287_1015082158842312_6602890576918478848_o.jpg" />
+    <Content Include="ShopingCart\Contents\Uploads\_thumbs\Images\gh018.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
